@@ -8,10 +8,15 @@ export interface UserDataTypes {
 export interface UserDataReducerTypes {
   userData: UserDataTypes;
   loginSpinner: boolean;
+  folderSpinner: boolean;
+  folders: any[];
+  bookmarks: any[];
+  node: {};
+  folderData: {};
 }
 
 export default interface StoreState {
   userData: UserDataReducerTypes;
-
+  // loginSpinner: boolean;
   router: RouterState;
 }
